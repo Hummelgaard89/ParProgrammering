@@ -12,7 +12,8 @@ namespace DesktopH2
         public static int HourIntervalPicked = 0;
 
         DalManager manager = new DalManager();
-        //The running method, check if the time is up, if not it waits 5 min, t
+        //The running method, check if the time is up, if not it waits 5 min, then cheks again.
+        //When the time is up, it updates the time and starts all over.
         public void RunningProgram()
         {
             bool dateCheck = false;
