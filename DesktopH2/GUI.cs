@@ -14,6 +14,11 @@ namespace DesktopH2
             Console.WriteLine("First write your directory path");
             logic.ValidDirectory(Console.ReadLine());
             PickTimeInterval();
+            Menu();
+        }
+        public void Menu()
+        {
+            logic.RunningProgram();
         }
         //Method to write error messages.
         public static void ErrorMessage(string input)

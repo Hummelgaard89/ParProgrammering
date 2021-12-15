@@ -21,7 +21,7 @@ namespace DesktopH2
             {
                 while (dateCheck == false)
                 {
-                    if (CurrentDateTime <= EndDateTime)
+                    if (CurrentDateTime >= EndDateTime)
                     {
                         manager.GetFilesFromDirectory();
                         dateCheck = true;
